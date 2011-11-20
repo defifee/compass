@@ -11,12 +11,7 @@
           - if n
             %a{:href => n.rep_named(:default).path, :title => n[:title]} Next Post &raquo;
     #page
-      #docs_panel
-        #theme_pref
-          %a{:href => "#", :rel => "theme", :title => "switch theme" } Q
-        #version
-          Version:
-          %a.number(href="/CHANGELOG/")= compass_version
+     
       = yield
       #comments= render "partials/disqus_comments"
     %footer(role="contentinfo")= render "partials/footer"

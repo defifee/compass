@@ -1,9 +1,9 @@
 #!/usr/bin/env ruby
 
-require 'compass'
+require 'compass'	
 
 Compass.add_configuration "#{File.dirname(__FILE__)}/.compass/config.rb"
-
+#Compass.add_project_configuration 'compass/config.rb'
 SITE_ROOT = ""
 
 compile '/assets/*/' do

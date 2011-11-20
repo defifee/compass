@@ -17,9 +17,7 @@
     #wrap
       = render "partials/main-navigation"
       #page
-        #docs_panel
-          #theme_pref
-            %a{:href => "#", :rel => "theme", :title => "switch theme" } Q
+       
         = yield
       %footer(role="contentinfo")= render "partials/footer"
     = render "partials/analytics"

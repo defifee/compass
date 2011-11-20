@@ -24,12 +24,6 @@
             %li
               %a{:href => "http://github.com/chriseppstein/compass/issues", :rel => "bugs"} <span>Bugs</span>
       #page
-        #docs_panel
-          #theme_pref
-            %a{:href => "#", :rel => "theme", :title => "switch theme" } Q
-          #version
-            Version:
-            %a.number(href="/CHANGELOG/")= compass_version
-        = yield
+        
       %footer(role="contentinfo")= render "partials/footer"
     = render "partials/analytics"
